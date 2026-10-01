@@ -1,0 +1,21 @@
+# Dev environment (not part of the published project)
+ZHMModSDK/
+.rustup/
+.cargo/
+xwin*
+*.exe
+
+# Machine-specific dev scripts (S:\ paths, local VS install)
+configure.cmd
+build.cmd
+
+# Build outputs
+_build/
+dist/
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
+Thumbs.db

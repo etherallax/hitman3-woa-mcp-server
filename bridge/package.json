@@ -1,0 +1,29 @@
+{
+  "name": "hitman-mcp-bridge",
+  "version": "1.0.0",
+  "description": "MCP server bridging AI agents into a live HITMAN 3 process via the MCPBridge ZHM mod",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "hitman-mcp-bridge": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "hitman",
+    "hitman3",
+    "world-of-assassination",
+    "mcp",
+    "mod",
+    "zhmmodsdk"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^3.25.0"
+  }
+}
