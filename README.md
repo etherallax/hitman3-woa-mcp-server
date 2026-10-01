@@ -48,6 +48,12 @@ and there is no authentication — do not expose the port.
 
 ## Install the mod
 
+**Option A — Simple Mod Framework (recommended for SMF users):**
+grab `hitman-mcp-<ver>.framework.zip` and drop it into SMF's Mods folder like
+any other framework mod, then Apply/Deploy. The deploy script copies the DLL
+into `Retail/mods/` and enables it in `Retail/mods.ini` automatically.
+
+**Option B — manual:**
 1. Copy `MCPBridge.dll` into `<game>/Retail/mods/`.
 2. Edit `<game>/Retail/mods.ini` and add a section:
    ```ini
@@ -56,6 +62,10 @@ and there is no authentication — do not expose the port.
 3. Launch the game. In the SDK console (`~`) you should see:
    `MCPBridge: listening on 127.0.0.1:47847`
    A `MCPBRIDGE` tab also appears in the SDK menu bar showing the port.
+
+> ⚠️ Uninstall note: removing the SMF package does not remove the DLL —
+> delete `Retail/mods/MCPBridge.dll` and the `[mcpbridge]` section in
+> `mods.ini` to fully uninstall (either install method).
 
 Optional: create `<game>/Retail/mods/mcpbridge.ini` to change the port:
 

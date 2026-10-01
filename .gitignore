@@ -12,6 +12,7 @@ build.cmd
 # Build outputs
 _build/
 dist/
+smf/MCPBridge.dll
 
 # Node
 node_modules/

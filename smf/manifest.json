@@ -1,0 +1,18 @@
+{
+	"id": "Etherallax.MCPBridge",
+	"name": "MCPBridge — AI/HTTP control API",
+	"description": "Runs a localhost HTTP server inside the game (127.0.0.1:47847) exposing player state, teleport, item spawn, cheats and time scale — plus an optional MCP bridge so AI agents can play along. Installs the ZHM plugin DLL via deploy script.",
+	"authors": [
+		"Etherallax",
+		"Devin"
+	],
+	"version": "1.0.0",
+	"frameworkVersion": "2.0.0",
+	"supportedPlatforms": [
+		"steam",
+		"epic"
+	],
+	"scripts": [
+		"deploy.ts"
+	]
+}
