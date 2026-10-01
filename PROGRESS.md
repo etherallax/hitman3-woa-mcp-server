@@ -43,6 +43,15 @@
       3.270.1 even for stock mods (`reload world` froze) — NOT our bug.
       Documented: restart to update.
 
+## Release — DONE
+
+- [x] Repo pushed: https://github.com/etherallax/hitman3-woa-mcp-server
+- [x] GitHub release `v1.0.0` created with both assets:
+      manual zip + SMF framework zip (zip layout fixed after SMF rejected
+      flat manifest at root — needs `Etherallax.MCPBridge/` folder inside)
+- [ ] npm publish of `hitman-mcp-bridge` (user choice; `npx` works from repo)
+- [ ] Nexus upload — user opted to skip; `dist/README-NEXUS.txt` kept for later
+
 ## Known behaviors
 
 - Commands dispatched while the game is PAUSED (or `~` console open) queue

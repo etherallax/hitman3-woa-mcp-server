@@ -48,10 +48,17 @@ and there is no authentication — do not expose the port.
 
 ## Install the mod
 
+Prebuilt packages live on the
+[Releases](https://github.com/etherallax/hitman3-woa-mcp-server/releases)
+page.
+
 **Option A — Simple Mod Framework (recommended for SMF users):**
 grab `hitman-mcp-<ver>.framework.zip` and drop it into SMF's Mods folder like
 any other framework mod, then Apply/Deploy. The deploy script copies the DLL
-into `Retail/mods/` and enables it in `Retail/mods.ini` automatically.
+into `Retail/mods/` and enables it in `Retail/mods.ini` automatically. Mod
+Manager will show its standard "mod contains scripts" warning — the script is
+plain text in the zip (`deploy.ts`, ~50 lines) and does only the file copy +
+ini edit.
 
 **Option B — manual:**
 1. Copy `MCPBridge.dll` into `<game>/Retail/mods/`.
